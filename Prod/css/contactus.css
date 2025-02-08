@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.contact-section {
+    background: #2d2d2d;
+    padding: 50px 0;
+    color: white;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    width: 45%;
+    background: transparent;
+    color: #fff;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-info p {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.contact-info .info li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info .info .icon {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.contact-info .info h4 {
+    margin-bottom: 5px;
+    color: #00bcd4;
+}
+
+.contact-info .info p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.contact-form {
+    width: 45%;
+    background: #fff;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+}
+
+.contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background: none;
+    outline: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.contact-form form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form form button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-form form button:hover {
+    background-color: #0097a7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
